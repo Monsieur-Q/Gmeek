@@ -52,6 +52,11 @@
             <path id="music" fill-rule="evenodd"></path>
         </svg>
     </a>
+        <a href="{{ blogBase['exlink'] }}" id="about" class="btn btn-invisible circle" title="{{ i18n['music'] }}">
+        <svg class="octicon" width="16" height="16">
+            <path id="music" fill-rule="evenodd"></path>
+        </svg>
+    </a>
     <a class="btn btn-invisible circle" onclick="modeSwitch()" title="{{ i18n['switchTheme'] }}" {%- if blogBase['themeMode']=='fix' -%}style="display:none;"{%- endif -%}>
         <svg class="octicon" width="16" height="16" >
             <path id="themeSwitch" fill-rule="evenodd"></path>
@@ -70,7 +75,7 @@
 <script>
 document.getElementById("pathHome").setAttribute("d",IconList["home"]);
 document.getElementById("searchSVG").setAttribute("d",IconList["search"]);
-
+document.getElementById("music").setAttribute("d",IconList["music"]);
 tagList=[];
 labelsCount={};
 jsonData='';
