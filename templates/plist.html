@@ -59,13 +59,7 @@
         </svg>
     </a>
     {%- endfor %}
-        {% for key, value in blogBase['exlink2'].items() -%}
-    <a href="{{ value }}" class="btn btn-invisible circle" title="{{ key }}" target="_blank">
-        <svg class="octicon" width="16" height="16" >
-            <path id="{{ key }}" fill-rule="evenodd"></path>
-        </svg>
-    </a>
-    {%- endfor %}
+
     {% for num in blogBase['singeListJson'] -%}
     <a href="{{ blogBase['homeUrl'] }}/{{ blogBase['singeListJson'][num]['labels'][0] }}.html" class="btn btn-invisible circle" title="{{ blogBase['singeListJson'][num]['postTitle'] }}">
         <svg class="octicon" width="16" height="16" >
