@@ -59,6 +59,13 @@
         </svg>
     </a>
     {%- endfor %}
+        {% for key, value in blogBase['exlink2'].items() -%}
+    <a href="{{ value }}" class="btn btn-invisible circle" title="{{ key }}" target="_blank">
+        <svg class="octicon" width="16" height="16" >
+            <path id="{{ key }}" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+    {%- endfor %}
     {% for num in blogBase['singeListJson'] -%}
     <a href="{{ blogBase['homeUrl'] }}/{{ blogBase['singeListJson'][num]['labels'][0] }}.html" class="btn btn-invisible circle" title="{{ blogBase['singeListJson'][num]['postTitle'] }}">
         <svg class="octicon" width="16" height="16" >
@@ -67,6 +74,11 @@
     </a>
     {%- endfor %}
     <a href="{{ blogBase['homeUrl'] }}/rss.xml" target="_blank" id="buttonRSS" class="btn btn-invisible circle" title="RSS">
+        <svg class="octicon" width="16" height="16" >
+            <path id="pathRSS" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+        <a href="{{ blogBase['audioUrl'] }}" target="_blank" id="" class="btn btn-invisible circle" title="Audio">
         <svg class="octicon" width="16" height="16" >
             <path id="pathRSS" fill-rule="evenodd"></path>
         </svg>
